@@ -1,1 +1,36 @@
-main.css
+h1, p, form {
+  font-family: Georgia, sans-serif; 
+  text-align: center; 
+}
+
+p {
+  color: red;  
+}
+
+body {
+  background-image: url(sayagata-400px.png);
+}
+
+form {
+  text-align: center; 
+}
+
+div {
+  margin-top: 20px; 
+}
+
+input[type=submit] {
+  background-color: gray;
+  font-family: Helvetica; 
+  font-size: 12px; 
+}
+
+input[type=text] {
+  font-size: 12px; 
+  color: blue;  
+}
+
+
+
+
+
