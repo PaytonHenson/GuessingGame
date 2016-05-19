@@ -2,19 +2,31 @@
 <html lang="en">
   <head>
     <title>The Guessing Game</title>
-
+    <link rel="stylesheet" href="main.css" type="text/css"> 
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="guessingGame.js"></script>
+   
   </head>
   <body>
     <h1>Welcome to the Guessing Game</h1>
     <p>Try to guess the right number!</p>
-    <form>
-      <input type="text" name="Input Value 1-100" value="Input Number 1-100">
-      <input type="submit" name="Submit Your Guess" value="Submit Your Guess!"><br>
+      <form>
+      <input id="guess" type="text" name="Input Value 1-100" value="Input Number 1-100">
+      <button type='button' id="playerGuess">Submit Your Guess!</button><br>
+      
       <div>
-      <input type="submit" name="Play Again" value="Play Again">
-      <input type="submit" name="Give Me a Hint" value="Give Me a Hint">
+      <button type='button' id='reload'>Play Again</button>
+      <button type='button' id="hint">Give Me a Hint</button>
       </div>
-    </form>
+      </form>  
+    <p id="active">5 Guesses Remaining</p>
+    
+    <p id="feedback"></p>
+
+    <div class="result">
+      <img src="winner.gif" alt="You're the winner" id="winner">
+      <img src="loser.gif" alt="You lost" id="loser">
+    </div>
     
 
   </body>
